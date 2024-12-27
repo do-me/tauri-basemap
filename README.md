@@ -1,5 +1,7 @@
-# tauri-basemap
+# Tauri Basemap
 [Basemap.de world vector](https://basemap.de/produkte-und-dienste/web-vektor-world/) with a custom [photon geocoder](https://photon.komoot.io/) interface packaged as tauri app for any device. 
+
+[![Tauri Basemap](https://github.com/user-attachments/assets/399fc3aa-9046-4bc9-820c-4d3887f9f619)](https://www.youtube.com/watch?v=b0tNk9DrmFs)
 
 Served mainly as a simple learning project for myself but thought it might be useful to share. 
 
