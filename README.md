@@ -29,7 +29,7 @@ With npm installed:
   - `styles.css`
 
 - for testing locally run `npm run tauri dev`
-- for building e.g. dmg or macos app `npm run tauri build`
+- for building e.g. dmg or macos app `npm run tauri build`. The resulting .app-file weighs only 9Mb and starts instantly.
 - I added the `basemap.app` to this repo but note that you should NEVER blindly trust random .app-files from the web. Instead, it's best to build it yourself.
 
 ## To Do: 
