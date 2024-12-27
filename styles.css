@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased; /* Improve text rendering on webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improve text rendering on firefox */
+  background-color: #f8f8f8; /* Light background color */
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transition: filter 0.3s ease; /*Smooth transition for map interactions*/
+}
+
+#geocoder {
+  position: absolute;
+  top: 20px; /* Increased top padding to avoid clutter*/
+  left: 50%; /* Center on page*/
+  transform: translateX(-50%); /* Center on page*/
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+#geocoder input {
+  padding: 10px 14px; /* Padding for comfortable spacing*/
+  border: 1px solid #ddd; /* Lighter border for subtle look */
+  border-radius: 8px;
+  width: 450px;  /* Reduced width (75% of 600px) */
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #333; /* Darker text for better readability */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for input focus */
+  outline: none; /* Removing the default outline*/
+}
+
+#geocoder input:focus {
+  border-color: #aaa; /* Darker border on focus */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* More noticeable shadow */
+}
+
+#searchResults {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0; /* Align with the left edge of the input field */
+  background-color: white;
+  border: 1px solid #ddd; /* Lighter border */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 250px; /* Slightly more space for results */
+  overflow-y: auto;
+  z-index: 2;
+  width: 450px;  /* Reduced width (75% of 600px) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: none;
+  box-sizing: border-box; /* Include padding/border in width calculation */
+}
+
+#searchResults li {
+  padding: 10px 14px; /* Padding for list items*/
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+
+#searchResults li:last-child {
+  border-bottom: none;
+}
+
+#searchResults li:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+}
+
+/* Custom Scrollbar Styling */
+#searchResults::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+#searchResults::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 4px; /* Rounded track */
+}
+
+#searchResults::-webkit-scrollbar-thumb {
+  background: #c1c1c1; /* Color of the thumb */
+  border-radius: 4px; /* Rounded thumb */
+}
+
+#searchResults::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; /* Darker color on hover */
+}
