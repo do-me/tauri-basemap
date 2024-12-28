@@ -4,9 +4,7 @@
 Click the image below to view the demo video on YouTube.
 [![Tauri Basemap](https://github.com/user-attachments/assets/399fc3aa-9046-4bc9-820c-4d3887f9f619)](https://www.youtube.com/watch?v=b0tNk9DrmFs)
 
-Served mainly as a simple learning project for myself but thought it might be useful to share. 
-
-App here: https://do-me.github.io/tauri-basemap/
+## Interactive web-app here: https://do-me.github.io/tauri-basemap/
 
 ## How to build bundles 
 
@@ -37,6 +35,8 @@ With npm installed:
 
 ## To Do: 
 - Build Windows, iOS & Android files
+
+This is repo is the result of a small learning journey with tauri.
 
 
 
