@@ -3,20 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>MapLibre GL JS with Geocoder</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
+    <script src="https://unpkg.com/pmtiles@3.0.6/dist/pmtiles.js"></script>
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
 
 <div id="map"></div>
 <div id="geocoder">
-    <input type="text" id="addressInput" placeholder="Enter an address">
+    <div class="search-container">
+        <input type="text" id="addressInput" placeholder="Enter an address">
+        <button id="clearInput" class="clear-button">❌</button>
+     </div>
     <ul id="searchResults"></ul>
 </div>
 
 <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
 <script src="main.js"></script>
-
+<script src="photon_geocode.js"></script>
 </body>
 </html>
